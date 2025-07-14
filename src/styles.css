@@ -39,11 +39,24 @@ body {
     }
 
     .triangle {
+        position: relative;
         height : 0;
         width : 0;
         border-right : 60px solid transparent;
         border-left : 60px solid transparent;
         border-bottom : 110px solid #4d2600;
+
+    }
+    .triangle::before {
+        content: "";
+        position: absolute;
+        height : 0;
+        width : 0;
+        left:-40px;
+        top:20px;
+        border-right : 40px solid transparent;
+        border-left : 40px solid transparent;
+        border-bottom : 80px solid #4d2600;
 
     }
 
