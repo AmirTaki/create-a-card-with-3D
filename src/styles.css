@@ -29,6 +29,9 @@ body {
         transform-style: preserve-3d;
         transition:  all 1s ease-in-out;
     }   
+    .front {
+        transform: rotateY(180deg);
+    }
     .card {
         display: flex;
         justify-content: center;
@@ -39,6 +42,7 @@ body {
         border-top: 2px solid #cc6600;
         border-left: 2px solid #cc6600;
         box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        backface-visibility: hidden;
     }
     .circle, .square {
         height : 110px;
