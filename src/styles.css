@@ -27,6 +27,9 @@ body {
         background : #D48600;
     }
     .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height : 100%;
         width : 100%;  
         background : #D48600;
