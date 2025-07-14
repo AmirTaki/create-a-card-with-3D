@@ -100,3 +100,13 @@ body {
     width: 25px;
     background: #4d2600;
 }
+.home-logo .icon::before {
+    content: "";
+    position: absolute;
+    height  : 25px;
+    top:-15px;
+    width : 25px;
+    background: #4d2600;
+    /* background-color: red; */
+    transform: rotate(45deg);
+}
