@@ -94,7 +94,7 @@ body {
     position: relative;
     top:50%;
     left:50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) translateY(6px);
     display: inline-block;
     height : 15px;
     width: 25px;
@@ -109,4 +109,10 @@ body {
     background: #4d2600;
     /* background-color: red; */
     transform: rotate(45deg);
+}
+
+.back.card .num {
+    font-size: 25px;
+    font-weight: 600;
+    color: #4d2600;
 }
