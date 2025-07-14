@@ -6,3 +6,11 @@
     box-sizing: border-box;
     font-family : "Poppins", sans-serif
 }
+
+.wrapper {
+    position: relative;
+    height:330px;
+    width: 620px;
+    background : #D48600
+
+}
