@@ -19,13 +19,16 @@ body {
     position: relative;
     height:330px;
     width: 620px;
+    perspective : 1000px;
     
     .flip-card{
         position: relative;
         height : 100%;
         width : 100%;   
         background : #D48600;
-    }
+        transform-style: preserve-3d;
+        transition:  all 1s ease-in-out;
+    }   
     .card {
         display: flex;
         justify-content: center;
@@ -52,6 +55,7 @@ body {
         border-right : 60px solid transparent;
         border-left : 60px solid transparent;
         border-bottom : 110px solid #4d2600;
+        margin-right: 16px;
 
     }
     .triangle::before {
@@ -67,4 +71,7 @@ body {
 
     }
 
+}
+.wrapper:hover  .flip-card{
+    transform: rotateY(180deg);
 }
